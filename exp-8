@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<students>
+  <student>
+    <id>101</id>
+    <name>Manish</name>
+    <dept>CSE</dept>
+  </student>
+</students>
