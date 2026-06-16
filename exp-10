@@ -1,0 +1,16 @@
+<form action="store.php" method="post">
+Name:
+<input type="text" name="name">
+<input type="submit">
+</form>
+
+PHP :
+<?php
+$name = $_POST['name'];
+
+$file = fopen("data.txt","a");
+fwrite($file,$name."\n");
+fclose($file);
+
+echo "Data Stored Successfully";
+?>
