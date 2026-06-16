@@ -1,0 +1,15 @@
+<?php
+
+$xml=simplexml_load_file("student.xml");
+
+echo "<h2>Student Details</h2>";
+
+foreach($xml->student as $s)
+{
+    echo "ID : ".$s->id."<br>";
+    echo "Name : ".$s->name."<br>";
+    echo "Department : ".$s->dept."<br>";
+    echo "<hr>";
+}
+
+?>
