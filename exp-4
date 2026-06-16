@@ -2,3 +2,21 @@
 Name: <input type="text" name="name">
 <input type="submit">
 </form>
+
+JAVA :
+import java.io.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+
+public class HelloServlet extends HttpServlet {
+    public void doPost(HttpServletRequest req,
+                       HttpServletResponse res)
+            throws IOException {
+
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+
+        String name = req.getParameter("name");
+        out.println("<h1>Welcome " + name + "</h1>");
+    }
+}
