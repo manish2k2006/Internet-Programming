@@ -1,0 +1,8 @@
+<?php
+$name = "Manish";
+
+if (preg_match("/^[A-Za-z]+$/", $name))
+    echo "Valid Name";
+else
+    echo "Invalid Name";
+?>
