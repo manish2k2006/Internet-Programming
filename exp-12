@@ -1,0 +1,21 @@
+<?php
+
+$host="localhost";
+$user="root";
+$password="";
+$dbname="studentdb";
+
+$conn=mysqli_connect($host,$user,$password,$dbname);
+
+if(!$conn)
+{
+    die("Connection Failed");
+}
+else
+{
+    echo "Database Connected Successfully";
+}
+
+mysqli_close($conn);
+
+?>
