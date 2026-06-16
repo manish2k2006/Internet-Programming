@@ -17,3 +17,11 @@ else
 mysqli_close($conn);
 
 ?>
+XML:
+<students>
+ <student>
+  <id>101</id>
+  <name>Manish</name>
+  <dept>CSE</dept>
+ </student>
+</students>
