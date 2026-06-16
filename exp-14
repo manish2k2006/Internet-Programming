@@ -1,0 +1,23 @@
+<?php
+
+$conn=mysqli_connect("localhost","root","","studentdb");
+
+$result=mysqli_query($conn,"SELECT * FROM student");
+
+echo "<table border='1'>";
+echo "<tr><th>ID</th><th>Name</th><th>Department</th></tr>";
+
+while($row=mysqli_fetch_assoc($result))
+{
+    echo "<tr>";
+    echo "<td>".$row['id']."</td>";
+    echo "<td>".$row['name']."</td>";
+    echo "<td>".$row['dept']."</td>";
+    echo "</tr>";
+}
+
+echo "</table>";
+
+mysqli_close($conn);
+
+?>
