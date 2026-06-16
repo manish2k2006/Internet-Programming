@@ -1,0 +1,11 @@
+<form action="page2.jsp">
+<input type="hidden" name="user" value="Manish">
+<input type="submit" value="Next">
+</form>
+
+
+JSP :
+<%
+String user = request.getParameter("user");
+out.println("User: " + user);
+%>
