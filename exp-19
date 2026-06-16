@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+Name:
+<input type="text"><br><br>
+
+Roll No:
+<input type="text"><br><br>
+
+Department:
+<input type="text"><br><br>
+
+Gender:
+<input type="radio" name="g">Male
+<input type="radio" name="g">Female
+<br><br>
+
+<input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
