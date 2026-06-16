@@ -1,0 +1,19 @@
+import java.io.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+
+public class ExamServlet extends HttpServlet {
+  public void doPost(HttpServletRequest req,
+                     HttpServletResponse res)
+                     throws IOException {
+
+    PrintWriter out = res.getWriter();
+
+    String ans = req.getParameter("q1");
+
+    if(ans.equals("Java"))
+      out.println("Score: 1");
+    else
+      out.println("Score: 0");
+  }
+}
