@@ -1,0 +1,19 @@
+<?php
+
+$conn=mysqli_connect("localhost","root","","studentdb");
+
+$sql="INSERT INTO student(id,name,dept)
+VALUES(101,'Manish','CSE')";
+
+if(mysqli_query($conn,$sql))
+{
+    echo "Record Inserted Successfully";
+}
+else
+{
+    echo "Insertion Failed";
+}
+
+mysqli_close($conn);
+
+?>
