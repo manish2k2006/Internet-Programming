@@ -1,0 +1,20 @@
+<?php
+
+$conn=mysqli_connect("localhost","root","","studentdb");
+
+$sql="UPDATE student
+SET dept='IT'
+WHERE id=101";
+
+if(mysqli_query($conn,$sql))
+{
+    echo "Record Updated Successfully";
+}
+else
+{
+    echo "Update Failed";
+}
+
+mysqli_close($conn);
+
+?>
