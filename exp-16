@@ -1,0 +1,19 @@
+<?php
+
+$conn=mysqli_connect("localhost","root","","studentdb");
+
+$sql="DELETE FROM student
+WHERE id=101";
+
+if(mysqli_query($conn,$sql))
+{
+    echo "Record Deleted Successfully";
+}
+else
+{
+    echo "Deletion Failed";
+}
+
+mysqli_close($conn);
+
+?>
